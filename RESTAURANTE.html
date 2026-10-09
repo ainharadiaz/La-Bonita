@@ -29,11 +29,14 @@
         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         </p>
         <script>
-            const ahora = new Date();
-            console.log(ahora);
-        </script>
-        <p>Hora actual: <span id="hora"></span></p>
+    const ahora = new Date();
+    document.getElementById("hora").textContent =
+        ahora.toLocaleTimeString("es-ES");
+</script>
+
+<p>Hora actual: <span id="hora"></span></p>
         
          
     </body>
 </html>
+
