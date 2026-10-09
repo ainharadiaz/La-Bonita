@@ -7,6 +7,17 @@
     <body>
         <h1>Nombre del restaurante</h1>
         <h3>Bienvenidos a mi restaurante</h3>
+        
+<p>FECHA: <span id="fecha"></span></p>
+
+<script>
+    const ahora = new Date();
+    document.getElementById("fecha").textContent =
+        ahora.toLocaleDateString("es-ES");
+</script>
+<p>HORA: <span id="hora"></span></p>
+
+<script src="hora.js"></script>
          
     </body>
 </html>
