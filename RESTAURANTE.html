@@ -16,9 +16,10 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://ainharadiaz.github.io/La-Bonita/">
         <meta property="og:description" content="Página web del restaurante La Bonita"> 
-        <link rel="shortcut icon" type="image/x-icon" href="C:\Users\sanch\Desktop\DESARROLLO APLICACIONES WEB 1\LENGUAJE DE MARCAS\La Bonita\imagenes">
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/logobueno.ico">
         Elementos opcionales de la cabecera
     </head>
+    <script src="hora.js"></script>
     <body>
         <h1>Nombre del restaurante</h1>
         <h3>Bienvenidos a mi restaurante</h3>
@@ -27,6 +28,11 @@
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         </p>
+        <script>
+            const ahora = new Date();
+            console.log(ahora);
+        </script>
+        <p>Hora actual: <span id="hora"></span></p>
         
          
     </body>
