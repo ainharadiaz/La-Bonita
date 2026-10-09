@@ -1,4 +1,7 @@
+const fechaHora = new Date();
 
-const ahora = new Date();
+document.getElementById("fecha").textContent =
+    fechaHora.toLocaleDateString("es-ES");
+
 document.getElementById("hora").textContent =
-    ahora.toLocaleTimeString("es-ES");
+    fechaHora.toLocaleTimeString("es-ES");

@@ -19,7 +19,6 @@
         <link rel="shortcut icon" type="image/x-icon" href="imagenes/logobueno.ico">
         Elementos opcionales de la cabecera
     </head>
-    <script src="hora.js"></script>
     <body>
         <h1>Nombre del restaurante</h1>
         <h3>Bienvenidos a mi restaurante</h3>
@@ -28,15 +27,12 @@
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
         </p>
-        <script>
-    const ahora = new Date();
-    document.getElementById("hora").textContent =
-        ahora.toLocaleTimeString("es-ES");
-</script>
+        <p>FECHA: <span id="fecha"></span></p>
+        <p>HORA: <span id="hora"></span></p>
 
-<p>Hora actual: <span id="hora"></span></p>
-        
+        <script src="hora.js"></script>
+    </body>
+</html>        
          
     </body>
 </html>
-
